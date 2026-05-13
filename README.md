@@ -15,6 +15,6 @@ Wine-Mono 11.1.0
 
 Wine-Gecko 2.47.4
 
-Build flags: -O3 -march?x86-64-v2
+Build flags: -O3 -march=x86-64-v2
 
 Yes. It won't work if you don't have a processor that supports v2 or higher.
