@@ -8,6 +8,8 @@ Wine-Edge is a version based on Wine 11.8. Added features:
 Staging patches
 DXVK-SAREK 1.12.0
 VKD3D-Proton 3.0.1
+Wine-Mono 11.1.0
+Wine-Gecko 2.47.4
 
 Build flags: -O3 -march?x86-64-v2
 
