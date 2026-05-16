@@ -1,20 +1,22 @@
-WARNING: This warning occurs because Wine cannot fully read monitor metadata (EDID) from the registry in Wayland environments. Despite testing multiple workarounds, the warning may still persist in logs. 
-This has zero impact on game performance, FPS, or stability. 
-If you have a definitive fix, contributions are welcome!
+Wine-Edge is a performance-oriented, up-to-date version built on pure Wine. It's a hobby project.
 
+Added features:
 
-Wine-Edge is a version based on Wine 11.8. Added features:
+Base: Vanilla Wine
 
-Staging patches
+Patches: wine-staging
 
-DXVK-SAREK 1.12.0
+Added features:
 
-VKD3D-Proton 3.0.1
+DXVK 2.7.1 (compiled with git version)
+
+VKD3D-Proton 3.0.1 (compiled with git version)
+
+D7VK (I didn't compile this, I used a ready-made build)
 
 Wine-Mono 11.1.0
-
 Wine-Gecko 2.47.4
 
-Build flags: -O3 -march=x86-64-v2
+Flags used during compilation: -03 -march=x86-64-v2, Polly flags.
 
-Yes. It won't work if you don't have a processor that supports v2 or higher.
+I didn't use Polly when compiling DXVK/VKD3D, but I used LTO.
